@@ -16,7 +16,7 @@ jobs:
         pip install pytest pytest-cov
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
+        pylint *.py
         
     - name: Test with pytest
       run: |
